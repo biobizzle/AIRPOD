@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#080b0b" />
+  <title>Soundar — No wires. No stopping you.</title>
+  <meta name="description" content="A cinematic interactive concept inspired by the supplied Soundar wireless earbuds motion design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="viewport">
+    <div class="window" id="window" aria-label="Soundar interactive product showcase">
+      <div class="scenes" id="scenes">
+        <section class="scene scene-home is-active" id="home" aria-label="Wireless headphones home">
+          <div class="rings"><i></i><i></i><i></i><i></i></div>
+          <div class="hero-copy">
+            <h1>NO WIRES.<br>NO STOPPING YOU.</h1>
+            <p>Wireless Headphones</p>
+            <button class="demo" id="watch" type="button"><span class="play" aria-hidden="true"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M6 3.8 16.2 10 6 16.2z"/></svg></span> WATCH DEMO VIDEO</button>
+          </div>
+          <div class="product-field" id="productField" aria-label="Two floating neon-lime wireless earbuds">
+            <div class="halo"></div>
+            <div class="ear left"><img src="assets/earbud_a.webp" alt="Black and neon green triangular wireless earbud"></div>
+            <div class="ear right"><img src="assets/earbud_b.webp" alt="Matching wireless earbud with translucent green silicone tip"></div>
+            <button type="button" class="tag tag-colours" id="colours">COLOURS <b>+</b><i></i></button>
+            <button type="button" class="tag tag-features" data-target="1"><b>+</b> FEATURES<i></i></button>
+            <button type="button" class="tag tag-design" data-target="2"><b>+</b> DESIGN<i></i></button>
+            <button type="button" class="tag tag-specs" data-target="1">SPECS <b>+</b><i></i></button>
+          </div>
+        </section>
+        <section class="scene scene-features" id="about" aria-label="Features and details" inert>
+          <div class="gradient-top"></div><div class="gradient-bottom"></div>
+          <div class="macro-ear"><img src="assets/earbud_a.webp" alt="Detailed macro view of the Soundar wireless earbud"></div>
+          <div class="macro-ear-back"><img src="assets/earbud_b.webp" alt=""></div>
+          <p class="tech-caption tech-top-left"><svg viewBox="0 0 32 20" aria-hidden="true"><rect x="1" y="3" width="26" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="28" y="7" width="3" height="6" fill="currentColor"/><path d="M6 6v8m5-8v8m5-8v8m5-8v8" stroke="currentColor" stroke-width="2"/></svg> BATTERY &amp; CASE</p>
+          <p class="tech-caption tech-top-right">VOLUME-OPTIMISED EQ <svg viewBox="0 0 25 24" aria-hidden="true"><path d="M2 17v4M7 13v8M12 9v12M17 5v16M22 2v19" stroke="currentColor" stroke-width="3"/></svg></p>
+          <p class="tech-caption tech-bottom-left"><span class="bluetooth">ᛒ</span> TRULY WIRELESS</p>
+          <p class="tech-caption tech-bottom-right">RELIABLE CONNECTIONS <svg viewBox="0 0 31 24" aria-hidden="true"><path d="M1 7Q15 -4 30 7M6 12Q15 5 25 12M11 17q4-3 9 0" stroke="currentColor" stroke-width="3" fill="none"/><circle cx="16" cy="21" r="2" fill="currentColor"/></svg></p>
+        </section>
+        <section class="scene scene-environments" id="products" aria-label="All environment product imagery" inert>
+          <div class="environment-art" aria-hidden="true"></div>
+        </section>
+        <section class="scene scene-connect" id="contact" aria-label="Stay connected" inert>
+          <div class="contact-rings"><i></i><i></i><i></i></div>
+          <div class="portrait blue"></div><div class="portrait green"></div>
+          <div class="contact-copy"><h2>STAY CONNECT</h2><p>with us</p></div>
+        </section>
+      </div>
+      <header class="header">
+        <a href="#home" class="logo" data-target="0" aria-label="Soundar Home"><svg viewBox="0 0 55 28" aria-hidden="true"><path d="M7 2H53l-5 5H18l-8 5h33l-7 5H4L9 22h31l9-8M7 2 2 26h9M53 2l-3 24H38" stroke="currentColor" fill="none" stroke-width="2.6" stroke-linejoin="miter"/></svg></a>
+        <nav class="nav" id="nav" aria-label="Main navigation"><button data-target="0" class="on" type="button">Home</button><button data-target="1" type="button">About</button><button data-target="2" type="button">Products</button><button data-target="3" type="button">Contact</button></nav>
+        <button type="button" id="buy" class="buy">Buy now</button>
+        <button type="button" class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+      </header>
+      <footer class="footer">
+        <div class="socials" aria-label="Social media decorative icons"><span aria-label="Facebook">f</span><span aria-label="X">𝕏</span><span aria-label="LinkedIn">in</span><span aria-label="Instagram">◎</span></div>
+        <a class="footer-email" href="mailto:soundarbfa@gmail.com">soundarbfa@gmail.com</a>
+      </footer>
+      <div class="scrim" id="scrim" aria-hidden="true"></div>
+    </div>
+    <div class="controls" aria-label="Presentation controls"><div class="control-left"><span class="live-dot"></span> SOUNDAR / MOTION STUDY</div><div class="control-center"><button id="previous" aria-label="Previous scene">←</button><span id="count">01 / 04</span><button id="next" aria-label="Next scene">→</button></div><button type="button" id="autoplay" aria-pressed="true">PAUSE MOTION <span>Ⅱ</span></button></div>
+  </main>
+  <dialog id="modal"><form method="dialog"><button class="close" aria-label="Close dialog">×</button></form><div id="modalContent"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
